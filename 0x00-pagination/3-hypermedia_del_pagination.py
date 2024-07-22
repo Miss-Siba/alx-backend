@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""
-Deletion-resilient hypermedia pagination
+"""Task 3: Deletion-resilient hypermedia pagination
 """
 
 import csv
 import math
-from typing import List, Dict, Any, Tuple
+from typing import Dict, List, Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
@@ -22,7 +21,6 @@ class Server:
 
     def __init__(self):
         self.__dataset = None
-        self.__indexed_dataset = None
 
     def dataset(self) -> List[List]:
         """Cached dataset
