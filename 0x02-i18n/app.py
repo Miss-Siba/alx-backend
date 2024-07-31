@@ -78,7 +78,7 @@ def get_timezone() -> str:
         return app.config['BABEL_DEFAULT_TIMEZONE']
 
 
-@app.route('/')
+@app.route('/', strict_slashes=False)
 def get_index() -> str:
     """The home/index page.
     """
